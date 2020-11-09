@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Tortas</title>
+</head>
+
+<body>
+    <header>
+        <h2>Tortas</h2>
+    </header>
+    <form id="forma" action="javascript:procesa()">
+        <fieldset>
+            <legend>Menú</legend>
+            <div>
+                <label>
+                    <input type="checkbox" accesskey="H" name="tortas" value="Hawaiana">
+                    Hawaiana $45
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" accesskey="C" name="tortas" value="Cubana">
+                    Cubana $90
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" accesskey="M" name="tortas" value="Mexicana"> 
+                    Mexicana $60
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" accesskey="E" name="tortas" value="Española">
+                    Española $50
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" accesskey="S" name="tortas" value="Suiza">
+                    Suiza $35
+                </label>
+            </div>
+
+        </fieldset>
+        <output id="salidaTortas"></output>
+    </form>
+    <figura-web id="clown" y="250" velocidad="100">🤡</figura-web>
+    <figura-web id="marciano" y="350" velocidad="20">👽</figura-web>
+    <figura-web id="diablo" y="500" velocidad="50">👺</figura-web>
+
+    <script>
+        setInterval(() => {
+            clown.muevete();
+            marciano.muevete();
+            diablo.muevete();
+        }, 120);
+    </script>
+    <footer>
+        Copyrigth AngelBz
+    </footer>
+    <script src="js/menuTortas.js"></script>
+    <script src="js/moverFigura.js"></script>
+</body>
+
+</html>
